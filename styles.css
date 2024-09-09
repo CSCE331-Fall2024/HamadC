@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #ffff;
+}
+
+.project, .img {
+    flex: 1;
+    padding: 20px;
+    max-width: 70%;
+}
+
+.img {
+    float: right;
+}
+
+.project {
+    float: left;
+}
+
+
+body {
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+}
+#right{
+    text-align: right;
+}
