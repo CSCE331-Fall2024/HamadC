@@ -69,3 +69,28 @@ h1 {
     margin-right: auto;
     width: 50%;
   }
+
+#home-ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #333; /* Background color of the navigation bar */
+    overflow: hidden; /* Ensure the navigation bar is contained */
+}
+
+#home-link {
+    float: left; /* Align list items horizontally */
+}
+
+#home-link a {
+    display: block; /* Make the link a block-level element */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Padding around the text */
+    text-decoration: none; /* Remove underlines */
+}
+
+/* Add a hover effect */
+#home-link a:hover {
+    background-color: #111; /* Background color on hover */
+}
