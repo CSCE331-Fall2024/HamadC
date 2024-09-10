@@ -1,18 +1,62 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Blank AI Page</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Compilers</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <!-- Navigation Bar -->
+    <div id = "navigation">
+      <ul id = "home-ul">
+        <li id = "home-link"><a href="index.html">Home</a></li>
+        <li id = "home-link"><a href="resume.html">Resume</a></li>
+        <li id = "home-link"><a href="service.html">Community Service</a></li>
+        <li id = "home-link"><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
 
-<div id = "navigation">
-  <ul id = "home-ul">
-    <li id = "home-link"><a href="index.html">Home</a></li>
-    <li id = "home-link"><a href="resume.html">Resume</a></li>
-    <li id = "home-link"><a href="service.html">Community Service</a></li>
-    <li id = "home-link"><a href="ai-page.html">AI Page</a></li>
-  </ul>
-</div>
+    <!-- Main Content -->
+    <section id="what-is-compiler">
+        <h2>What is a Compiler?</h2>
+        <p>A <strong>compiler</strong> is a special program that translates code written in a high-level programming language (like C++, Java, or Python) into machine language, which can be understood and executed by a computer’s hardware. The process of translation helps bridge the gap between human-readable code and machine-level instructions.</p>
+        <p>Without compilers, programs would need to be written in binary, which is complex and tedious.</p>
+    </section>
 
-<h1>AI Page</h1>
+    
+
+    <section id="compilation-stages">
+        <h2>Stages of Compilation</h2>
+        <p>The process of compiling a program can be divided into several stages:</p>
+        <ol>
+            <li><strong>Lexical Analysis</strong>: The source code is broken down into tokens like keywords, operators, and identifiers.</li>
+            <li><strong>Syntax Analysis</strong>: The compiler checks the source code for grammatical errors based on the language’s syntax rules. This is done using a syntax tree.</li>
+            <li><strong>Semantic Analysis</strong>: The compiler ensures that the code makes sense semantically, for example, checking if variables are declared before they are used.</li>
+            <li><strong>Intermediate Code Generation</strong>: The code is translated into an intermediate representation that is easier for the machine to understand but still not machine code.</li>
+            <li><strong>Optimization</strong>: The compiler optimizes the intermediate code for efficiency, removing redundancies or improving speed.</li>
+            <li><strong>Code Generation</strong>: The optimized intermediate code is finally translated into machine code.</li>
+            <li><strong>Linking and Loading</strong>: The generated machine code is linked with libraries and loaded into memory to be executed.</li>
+        </ol>
+    </section>
+    
+
+    <section id="types-of-compilers">
+        <h2>Types of Compilers</h2>
+        <p>There are different types of compilers based on how they process the code and their target platforms:</p>
+        <ul>
+            <li><strong>Single-Pass Compiler</strong>: Reads and processes the source code in a single pass. It is faster but less efficient in optimization.</li>
+            <li><strong>Multi-Pass Compiler</strong>: Processes the code in multiple passes, allowing for better optimization but at the cost of speed.</li>
+            <li><strong>Just-in-Time (JIT) Compiler</strong>: Translates code during execution rather than before execution, commonly used in languages like JavaScript and Java.</li>
+            <li><strong>Cross Compiler</strong>: Generates code for a different platform from the one it is compiled on. For example, compiling a program on a Windows machine that will run on an embedded system.</li>
+            <li><strong>Incremental Compiler</strong>: Compiles only the parts of the code that have been modified rather than recompiling the whole program, saving time.</li>
+        </ul>
+    </section>
+
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>Compilers are essential tools that help convert high-level programming languages into machine language, making them critical for modern software development. By understanding how compilers work and their various types, programmers can write more efficient code and better appreciate how their code is transformed into something a computer can understand.</p>
+    </section>
+
+</body>
+</html>
