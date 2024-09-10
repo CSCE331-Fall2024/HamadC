@@ -55,3 +55,10 @@ h1 {
 #info {
     background-color: rgb(145, 144, 144);
 }
+
+#activity {
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
