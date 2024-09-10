@@ -17,7 +17,7 @@
 body {
     font-family: Verdana;
     font-size: 14px;
-    background-color: #ffff;
+    background-color: #D3D3D3;
 }
 
 h1 {
@@ -56,19 +56,12 @@ h1 {
     background-color: rgb(145, 144, 144);
 }
 
-#activity {
-    border: 2px solid grey;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
+}
 
 #home-ul {
     list-style-type: none; /* Remove bullet points */
@@ -76,10 +69,12 @@ h1 {
     padding: 0; /* Remove default padding */
     background-color: #333; /* Background color of the navigation bar */
     overflow: hidden; /* Ensure the navigation bar is contained */
+    float: left;
 }
 
 #home-link {
-    float: left; /* Align list items horizontally */
+    float: right; /* Align list items horizontally */
+    list-style-type: none;
 }
 
 #home-link a {
@@ -93,4 +88,18 @@ h1 {
 /* Add a hover effect */
 #home-link a:hover {
     background-color: #111; /* Background color on hover */
+}
+
+#toggle-theme {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Button hover effect similar to link hover */
+#toggle-theme:hover {
+    background-color: #111;
 }

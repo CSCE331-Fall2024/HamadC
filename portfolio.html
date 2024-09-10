@@ -3,18 +3,25 @@
 <head>
 <title>My Portfolio</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" href="styles.css">
+<link id = "theme-stylesheet" rel="stylesheet" href="themes/styles.css">
 </head>
 
-<div id = "navigation">
+
+<div id = "navigation" style="background-color: #333;">
     <ul id = "home-ul">
       <li id = "home-link"><a href="index.html">Home</a></li>
       <li id = "home-link"><a href="resume.html">Resume</a></li>
       <li id = "home-link"><a href="service.html">Community Service</a></li>
       <li id = "home-link"><a href="ai-page.html">AI Page</a></li>
     </ul>
+
+    <li id="home-link">
+      <button id="toggle-theme" onclick="toggleTheme()">Switch Theme</button>
+  </li>
 </div>
 
+<br>
+<br>
 <h1>My Portfolio</h1>
 <p>Here you can find all the projects that I have completed. </p>
 
@@ -86,3 +93,5 @@
     <img src="images/cc2640.png" alt="CC2640", width="400px" height="200px">
   </div>
 </div>
+
+<script src="script.js"></script>

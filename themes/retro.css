@@ -1,0 +1,120 @@
+/* Overall Container Style */
+.container {
+    display: flex;
+    width: 100%;
+    border: 3px solid #00FFFF; /* Neon cyan border */
+    border-radius: 20px;
+    background-color: #111; /* Dark background to contrast neon colors */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Neon glow */
+}
+
+/* Project Section */
+.project {
+    flex: 1;
+    padding: 20px;
+    max-width: 70%;
+    color: #FFF; /* White text */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font style */
+}
+
+/* Body and Background */
+body {
+    font-family: 'Orbitron', sans-serif; /* Retro sci-fi font */
+    font-size: 14px;
+    background: linear-gradient(135deg, #000428, #004e92); /* Neon blue gradient */
+    color: #FFFFFF;
+}
+
+/* Headings */
+h1 {
+    color: #FF00FF; /* Neon magenta color */
+    border-bottom: 2px solid #FF00FF;
+}
+
+/* Text alignment for specific sections */
+#right {
+    text-align: right;
+}
+
+/* My Info Section */
+#my-info {
+    width: 70%;
+    border: 2px solid #00FFFF; /* Neon cyan border */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(17, 17, 17, 0.8); /* Transparent dark background */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.6); /* Neon glow */
+}
+
+/* Navigation */
+#nav {
+    border: 2px solid #FF00FF;
+    border-radius: 10px;
+    padding: 5px;
+    width: 20%;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7); /* Magenta neon glow */
+}
+
+#intro {
+    width: 70%;
+    border: 2px solid #00FFFF;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent dark section */
+    color: #FFFFFF;
+}
+
+/* Buttons/Links */
+#home-link a {
+    display: block;
+    color: #00FFFF; /* Neon cyan text */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: #111;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Hover Effects */
+#home-link a:hover {
+    background-color: #FF00FF; /* Neon magenta on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Home Navigation Bar */
+#home-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    overflow: hidden;
+}
+
+/* Image Styling */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid #00FFFF; /* Neon cyan border around images */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Neon glow */
+}
+
+/* Additional sections */
+#info {
+    background-color: #222; /* Dark background */
+    color: #FFF;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Magenta glow */
+}
+
+/* Optional Animations (For Buttons, Links, etc.) */
+@keyframes neon-glow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.5);
+    }
+}
