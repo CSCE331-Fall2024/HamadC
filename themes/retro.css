@@ -1,120 +1,125 @@
-/* Overall Container Style */
 .container {
     display: flex;
     width: 100%;
-    border: 3px solid #00FFFF; /* Neon cyan border */
+    border: 3px solid #00ffcc;
     border-radius: 20px;
-    background-color: #111; /* Dark background to contrast neon colors */
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Neon glow */
+    background-color: #000000;
+    box-shadow: 0px 0px 10px #ff00ff, 0px 0px 20px #00ffff;
 }
 
-/* Project Section */
-.project {
+.project, .compilation-stages {
     flex: 1;
     padding: 20px;
     max-width: 70%;
-    color: #FFF; /* White text */
-    font-family: 'Orbitron', sans-serif; /* Futuristic font style */
+    float: left;
+    color: #ffcc00;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Body and Background */
+
 body {
-    font-family: 'Orbitron', sans-serif; /* Retro sci-fi font */
+    font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
-    background: linear-gradient(135deg, #000428, #004e92); /* Neon blue gradient */
-    color: #FFFFFF;
+    background-color: #111111;
+    color: #00ffcc;
 }
 
-/* Headings */
 h1 {
-    color: #FF00FF; /* Neon magenta color */
-    border-bottom: 2px solid #FF00FF;
+    border-bottom: 1px solid #ffcc00;
+    color: #ff00ff;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Text alignment for specific sections */
+
 #right {
     text-align: right;
+    color: #ffcc00;
 }
 
-/* My Info Section */
 #my-info {
     width: 70%;
-    border: 2px solid #00FFFF; /* Neon cyan border */
+    border: 2px solid #ffcc00;
     border-radius: 10px;
-    padding: 10px;
-    background-color: rgba(17, 17, 17, 0.8); /* Transparent dark background */
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.6); /* Neon glow */
+    padding: 5px;
+    background-color: #111111;
+    box-shadow: 0px 0px 10px #ff00ff, 0px 0px 20px #00ffff;
 }
 
-/* Navigation */
 #nav {
-    border: 2px solid #FF00FF;
+    border: 2px solid #ffcc00;
     border-radius: 10px;
     padding: 5px;
     width: 20%;
-    background-color: #333;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7); /* Magenta neon glow */
+    background-color: #000000;
+    box-shadow: 0px 0px 10px #00ffcc, 0px 0px 20px #ff00ff;
 }
 
 #intro {
     width: 70%;
-    border: 2px solid #00FFFF;
+    border: 2px solid #ffcc00;
     border-radius: 10px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent dark section */
-    color: #FFFFFF;
+    padding: 5px;
 }
 
-/* Buttons/Links */
-#home-link a {
-    display: block;
-    color: #00FFFF; /* Neon cyan text */
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    background-color: #111;
-    transition: background-color 0.2s ease, color 0.2s ease;
-    font-family: 'Orbitron', sans-serif;
-}
-
-/* Hover Effects */
-#home-link a:hover {
-    background-color: #FF00FF; /* Neon magenta on hover */
-    color: #000; /* Black text on hover */
-}
-
-/* Home Navigation Bar */
+/* NAVIGATION BAR (Retro Theme) */
 #home-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #222;
+    background-color: #008080; /* Retro teal */
     overflow: hidden;
 }
 
-/* Image Styling */
-.center {
+#home-ul li {
+    float: left;
+}
+
+#home-link a {
+    display: block;
+    color: #ffcc00; /* Retro yellow */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: 'Courier New', monospace; /* Retro font */
+}
+
+/* Hover effect */
+#home-link a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* THEME BUTTON (Retro Theme) */
+#theme-button {
+    background-color: #008080;
+    color: #ffcc00;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between; /* Space between ul and button */
+    align-items: center; /* Align items vertically in the center */
+    background-color: #008080;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+#theme-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#resume {
+    width:auto;
+    height:auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    border: 2px solid #00FFFF; /* Neon cyan border around images */
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Neon glow */
-}
 
-/* Additional sections */
-#info {
-    background-color: #222; /* Dark background */
-    color: #FFF;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Magenta glow */
-}
-
-/* Optional Animations (For Buttons, Links, etc.) */
-@keyframes neon-glow {
-    0%, 100% {
-        box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.7);
-    }
-    50% {
-        box-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.5);
-    }
+    max-width: 1000px;
+    max-height: 2000px;
 }

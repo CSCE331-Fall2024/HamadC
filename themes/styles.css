@@ -56,6 +56,7 @@ h1 {
     background-color: rgb(145, 144, 144);
 }
 
+
 .center {
     display: block;
     margin-left: auto;
@@ -90,6 +91,20 @@ h1 {
     background-color: #111; /* Background color on hover */
 }
 
+#theme-button {
+    float: right; /* Keep button on the right */
+    background-color: #333; /* Match background color */
+    color: white; /* Match text color */
+    border: none; /* Remove default borders */
+    padding: 14px 20px; /* Match padding with links */
+    cursor: pointer; /* Pointer on hover */
+    text-align: center;
+}
+
+#theme-button:hover {
+    background-color: #111; /* Same hover effect as links */
+}
+
 #toggle-theme {
     background-color: #333;
     color: white;
@@ -102,4 +117,66 @@ h1 {
 /* Button hover effect similar to link hover */
 #toggle-theme:hover {
     background-color: #111;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between; /* Space between ul and button */
+    align-items: center; /* Align items vertically in the center */
+    background-color: #333;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+#home-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#home-link {
+    margin-left: 20px; /* Spacing between links */
+}
+
+#home-link a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+  /* Add a hover effect */
+#home-link a:hover {
+    background-color: #111;
+}
+
+#theme-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+#theme-button:hover {
+    background-color: #111;
+}
+
+#pdf-canvas {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+
+}
+
+#resume {
+    width:auto;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1000px;
+    max-height: 2000px;
 }
